@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Roadmap doc (`docs/roadmap.md`) outlining phased motif detection milestones, inference possibilities, and community engagement steps
+
+### Added
+
 - Example motif-map JSON for Beethoven's Fifth in README to illustrate expected output structure
 
 ## [0.1.1] - 2026-01-04
