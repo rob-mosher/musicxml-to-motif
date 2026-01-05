@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "musicxml-to-motif"
-version = "0.1.1rc1"
+version = "0.1.1"
 description = "Convert MusicXML files into motif-friendly representations."
 readme = "README.md"
 requires-python = ">=3.12"
