@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Example motif-map JSON for Beethoven's Fifth in README to illustrate expected output structure
+
 ## [0.1.1] - 2026-01-04
 
 ### Added
