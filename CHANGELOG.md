@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-01-04
+
 ### Added
 
 - CHANGELOG.md for tracking project history
@@ -18,3 +20,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Packaging skeleton for `musicxml-to-motif`, including `pyproject.toml`, versioned `__init__.py`, CLI stub, and module entrypoint
 - Basic tests (`tests/test_version.py`, `tests/test_cli.py`) and `requirements.txt` for local pytest setup
 - GitHub Actions publish workflow updated for the musicxml-to-motif package name and trusted publishing targets
+
+[0.1.1]: https://github.com/rob-mosher/musicxml-to-motif/releases/tag/v0.1.1
