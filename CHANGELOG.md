@@ -16,7 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `matcher.py`: Fuzzy matching engine with configurable interval/rhythm tolerance and confidence scoring
   - `output.py`: JSON formatting and file output functionality
 - Full-featured CLI (`musicxml-to-motif analyze`) with parameters for detection sensitivity, tolerance, and output
-- Comprehensive test suite with 17 passing tests covering models, detection, matching, and CLI
+- Comprehensive test suite with 18 passing tests covering models, detection, matching, output, and CLI
 - Python API for programmatic access to all functionality (parse, detect, match, analyze, export)
 - `music21>=9.1.0` dependency for MusicXML parsing
 - Enhanced README with installation instructions, quick start guide, usage examples, and advanced configuration
@@ -28,6 +28,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated package description to "Identify musical motifs in MusicXML files using heuristic analysis"
 - Enhanced `pyproject.toml` with dependencies and additional classifiers
 - Development status changed from "Pre-Alpha" to "Alpha"
+
+### Fixed
+
+- JSON output now serializes fractional beat positions by converting `Fraction` values to floats, preventing CLI failures when printing or saving analysis results; regression test added for coverage
 
 ## [0.1.1] - 2026-01-04
 

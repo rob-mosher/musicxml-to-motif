@@ -90,7 +90,7 @@ class MotifInstance:
             "motif_id": self.motif_id,
             "measure": self.measure,
             "part": self.part,
-            "start_beat": self.start_beat,
+            "start_beat": float(self.start_beat),
             "confidence": self.confidence,
         }
         if self.variations:

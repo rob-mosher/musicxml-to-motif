@@ -4,10 +4,18 @@ This module handles formatting analysis results as JSON and other formats.
 """
 
 import json
+from fractions import Fraction
 from pathlib import Path
 from typing import Optional
 
 from .models import MotifAnalysis
+
+
+def _json_default(obj):
+    """Convert non-serializable types for JSON output."""
+    if isinstance(obj, Fraction):
+        return float(obj)
+    raise TypeError(f"Object of type {type(obj).__name__} is not JSON serializable")
 
 
 def format_as_json(
@@ -23,7 +31,12 @@ def format_as_json(
     Returns:
         JSON string representation
     """
-    return json.dumps(analysis.to_dict(), indent=indent, sort_keys=sort_keys)
+    return json.dumps(
+        analysis.to_dict(),
+        indent=indent,
+        sort_keys=sort_keys,
+        default=_json_default,
+    )
 
 
 def save_as_json(
